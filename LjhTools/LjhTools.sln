@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LjhTools.AutoCarCatch", "LjhTools.AutoCarCatch\LjhTools.AutoCarCatch.csproj", "{97D37D05-6D55-471E-BE33-14AA0E404114}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LjhTools.Utils", "LjhTools.Utils\LjhTools.Utils.csproj", "{D9CBD9B2-0C02-4652-9665-0F7BECF4E5AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LjhTools.TextShow", "LjhTools.TextShow\LjhTools.TextShow.csproj", "{B5BF3237-3813-4791-838D-D6443F6EF6ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LjhTools.ImagePro", "LjhTools.ImagePro\LjhTools.ImagePro.csproj", "{65677925-A82C-47F7-BECF-17D60C4FB81B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LjhTools.Web", "LjhTools.Web\LjhTools.Web.csproj", "{384A2A76-1409-417B-BE8A-84E195688CF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LjhTools.Data", "LjhTools.Data\LjhTools.Data.csproj", "{A65B2D99-602D-49C3-9382-ACA3C3FCBC07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LjhTools.JSDemo", "LjhTools.Demo\LjhTools.JSDemo.csproj", "{6DC2C62B-4228-4F0C-B8D7-C17419AB6D14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97D37D05-6D55-471E-BE33-14AA0E404114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97D37D05-6D55-471E-BE33-14AA0E404114}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97D37D05-6D55-471E-BE33-14AA0E404114}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97D37D05-6D55-471E-BE33-14AA0E404114}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9CBD9B2-0C02-4652-9665-0F7BECF4E5AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9CBD9B2-0C02-4652-9665-0F7BECF4E5AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9CBD9B2-0C02-4652-9665-0F7BECF4E5AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9CBD9B2-0C02-4652-9665-0F7BECF4E5AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5BF3237-3813-4791-838D-D6443F6EF6ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5BF3237-3813-4791-838D-D6443F6EF6ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5BF3237-3813-4791-838D-D6443F6EF6ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5BF3237-3813-4791-838D-D6443F6EF6ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65677925-A82C-47F7-BECF-17D60C4FB81B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65677925-A82C-47F7-BECF-17D60C4FB81B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65677925-A82C-47F7-BECF-17D60C4FB81B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65677925-A82C-47F7-BECF-17D60C4FB81B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{384A2A76-1409-417B-BE8A-84E195688CF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{384A2A76-1409-417B-BE8A-84E195688CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{384A2A76-1409-417B-BE8A-84E195688CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{384A2A76-1409-417B-BE8A-84E195688CF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A65B2D99-602D-49C3-9382-ACA3C3FCBC07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A65B2D99-602D-49C3-9382-ACA3C3FCBC07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A65B2D99-602D-49C3-9382-ACA3C3FCBC07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A65B2D99-602D-49C3-9382-ACA3C3FCBC07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DC2C62B-4228-4F0C-B8D7-C17419AB6D14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DC2C62B-4228-4F0C-B8D7-C17419AB6D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DC2C62B-4228-4F0C-B8D7-C17419AB6D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DC2C62B-4228-4F0C-B8D7-C17419AB6D14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

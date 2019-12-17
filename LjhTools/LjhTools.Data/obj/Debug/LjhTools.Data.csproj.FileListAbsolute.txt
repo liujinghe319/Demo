@@ -1,0 +1,6 @@
+D:\程序\LjhTools\LjhTools.Data\bin\Debug\LjhTools.Data.dll
+D:\程序\LjhTools\LjhTools.Data\bin\Debug\LjhTools.Data.pdb
+D:\程序\LjhTools\LjhTools.Data\bin\Debug\MySql.Data.dll
+D:\程序\LjhTools\LjhTools.Data\obj\Debug\LjhTools.Data.csprojResolveAssemblyReference.cache
+D:\程序\LjhTools\LjhTools.Data\obj\Debug\LjhTools.Data.dll
+D:\程序\LjhTools\LjhTools.Data\obj\Debug\LjhTools.Data.pdb

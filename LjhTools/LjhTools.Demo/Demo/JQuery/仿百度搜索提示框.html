@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+    <style type="text/css">
+        body,html
+        {
+            margin:0px;
+        }
+
+	.select {  
+		width: 200px;  
+		height: 30px;  
+		margin-left: 5px;  
+		margin-top: 5px;  
+		outline: none;
+		line-height:30px;
+		position:relative;
+	}  
+	.select input {  
+		width: 190px;  
+		outline: none;  
+		border: 0pt;  
+		line-height: 30px;
+		height: 30px;  
+		border: 1px solid #999; 
+		padding-left:10px;
+	}  
+	#result {  
+		position: absolute;  
+		top: 30px;  
+		border: 1px solid #999;  
+		left: 0px;  
+		width: 200px;  
+		line-height:25px;  
+		max-height:150px;
+		overflow-y:auto;
+	}  
+	#result ul{  
+	    margin:0px;
+		padding:0px;
+	} 
+	#result ul li{  
+	    list-style:none;
+		padding-left:10px;
+	} 
+	#result ul li:hover{  
+		background-color:#3CF;
+        cursor:pointer;
+	}  
+    </style>
+    <script src="../js/jquery/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript">
+
+     var tempArr = [{ value: 0, label: "12321321" }, { value: 0, label: "232232" }, { value: 0, label: "1221" }, { value: 0, label: "323223" },{ value: 0, label: "1221223"},{ value: 0, label: "6575765"},{ value: 0, label: "123232"}];//存储option
+	 var option="";	
+	 $(function(){  
+		//先将数据存入数组
+        for(var i=0;i<tempArr.length;i++)
+		{  
+			option += "<li onclick='select(this)'>"+tempArr[i].label+"</li>";   
+		} 
+		$("#search").focus(function(){	
+		   var key=$(this).val();
+		   if(key=="")
+		   {
+			 $("#rellist").html(option); 
+			 $("#result").css({"display":""}); 
+		   }
+		   else
+		   {
+			   showTip(key);
+		   }
+		});
+		$("#search").keyup(function(){
+			var key = $(this).val().trim();
+			showTip(key);
+		});
+		
+		$(document).bind('click', function(e) {    
+			var e = e || window.event; //浏览器兼容性     
+			var elem = e.target || e.srcElement;    
+			while (elem) { //循环判断至跟节点，防止点击的是div子元素     
+				if (elem.id && (elem.id == 'result' || elem.id == "search")) {    
+					return;    
+				}    
+				elem = elem.parentNode;    
+			}    
+			$('#result').css('display', 'none'); //点击的不是div或其子元素     
+		});    
+	});
+	function select(this_) {  
+		$("#search").val(this_.innerText);  
+		$("#result").css({"display":"none"});  
+	}  
+	function showTip(key)
+	{
+		if(key!="")
+		{
+			var inner="";
+			for(i=0;i<tempArr.length;i++){  
+				//若找到以txt的内容开头的，添option  
+				if(tempArr[i].label.indexOf(key)>=0){  
+				    inner += "<li onclick='select(this)'>" + tempArr[i].label + "</li>";
+				}  
+			}  
+			if(inner=="")
+			{
+				$("#rellist").html(""); 
+				$("#result").css({"display":"none"}); 
+			}
+			else
+			{					
+				$("#rellist").html(inner); 
+				$("#result").css({"display":""}); 
+			}
+		}
+		else
+		{
+			$("#rellist").html(""); 
+			$("#result").css({"display":"none"}); 
+		}
+	}
+	</script>
+</head>
+
+<body>
+<p>数据源绑定Ajax返回的数据即可！</p>
+<span class="select">  
+    <input type="text" name="search" id="search" class="search" placeholder="请选择或输入"/>  
+    <span name="result" id="result" style="display:none;">
+      <ul id="rellist"></ul>
+    </span>  
+</span>
+</body>
+</html>

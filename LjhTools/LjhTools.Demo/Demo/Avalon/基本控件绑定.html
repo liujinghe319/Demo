@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="../js/avalon/avalon.js"></script>
+    <script type="text/javascript">
+        var vm = avalon.define({
+            $id: "app",
+            carbrandbyletters:[{value:1,label:"一汽大众"},{value:2,label:"上汽大众"},{value:3,label:"江淮大众"},{value:4,label:"进口大众"}],
+            carbrandselected:[],
+            carbrandchange:function()
+            {
+                alert(this.carbrandselected.toString())
+            }
+        });
+    </script>
+</head>
+<body>
+    <div ms-controller="app">
+        <ul>
+            <li ms-for="(index,item) in carbrandbyletters">
+                <input type="checkbox" name="chk" ms-attr="{value:item.value}" ms-duplex="carbrandselected" ms-change="carbrandchange(index);">
+                <a href="#">{{item.label}}</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
